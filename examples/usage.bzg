@@ -1,0 +1,8 @@
+include("lib/env.bzg");
+
+var env = env(".env");
+
+print(env.APP_ENV);  // Outputs: development
+print(env.APP_PORT); // Outputs: 3000
+print(env.DB_TYPE);  // Outputs: sqlite
+print(env.DB_NAME);  // Outputs: ./lib/database/app.db
