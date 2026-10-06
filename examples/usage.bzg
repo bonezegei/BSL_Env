@@ -1,8 +1,8 @@
 include("lib/env.bzg");
 
-var env = env(".env");
+var denv = env("examples/.env");
 
-print(env.APP_ENV);  // Outputs: development
-print(env.APP_PORT); // Outputs: 3000
-print(env.DB_TYPE);  // Outputs: sqlite
-print(env.DB_NAME);  // Outputs: ./lib/database/app.db
+print(denv.APP_ENV);  // Outputs: development
+print(denv.APP_PORT); // Outputs: 3000
+print(denv.DB_TYPE);  // Outputs: sqlite
+print(denv.DB_NAME);  // Outputs: ./lib/database/app.db
